@@ -1,4 +1,4 @@
-// Define quiz questions and answers
+
 const quiz = [
     {
       question: "What is the capital of india?",
@@ -19,7 +19,7 @@ const quiz = [
   
   let score = 0;
   
-  // Function to display question and options
+
   function displayQuestion(index) {
     const questionElement = document.getElementById("question");
     const currentQuestion = quiz[index];
@@ -31,7 +31,7 @@ const quiz = [
     }
   }
   
-  // Function to check the answer
+ 
   function checkAnswer(userAnswer, correctAnswer) {
     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
       alert("Correct!");
@@ -41,7 +41,7 @@ const quiz = [
     }
   }
   
-  // Function to start the quiz
+
   function startQuiz() {
     for (let i = 0; i < quiz.length; i++) {
       displayQuestion(i);
@@ -49,6 +49,6 @@ const quiz = [
     alert("Quiz completed!\nYour score is: " + score + "/" + quiz.length);
   }
   
-  // Event listener for start button
+ 
   document.getElementById("start-btn").addEventListener("click", startQuiz);
   
